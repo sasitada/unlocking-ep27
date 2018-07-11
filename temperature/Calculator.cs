@@ -18,8 +18,11 @@ namespace temperature {
         /// </summary>
         /// <param name="fahrenheit"></param>
         /// <returns></returns>
-        public double ConvertFahrenheitToCelsius (double fahrenheit) {
-            throw new NotImplementedException ();
+        public double ConvertFahrenheitToCelsius (double fahrenheit) 
+        {
+            var c = (fahrenheit - 32)*5/9;
+            return c; 
+            //throw new NotImplementedException ();
         }
         /// <summary>
         /// เปลี่ยนค่า องศา Kelvin ให้เป็น Celsius
@@ -27,8 +30,11 @@ namespace temperature {
         /// </summary>
         /// <param name="kelvin"></param>
         /// <returns></returns>
-        public double ConvertKelvinToCelsius (double kelvin) {
-            throw new NotImplementedException ();
+        public double ConvertKelvinToCelsius (double kelvin) 
+        {
+            var c = kelvin - 273.15;
+            return c;
+            //throw new NotImplementedException ();
         }
 
         /// <summary>
@@ -37,8 +43,11 @@ namespace temperature {
         /// </summary>
         /// <param name="celsius"></param>
         /// <returns></returns>
-        public double ConvertCelsiusToFahrenheit (double celsius) {
-            throw new NotImplementedException ();
+        public double ConvertCelsiusToFahrenheit (double celsius) 
+        {
+            var f = 1.8*celsius + 32;
+            return f;
+            //throw new NotImplementedException ();
         }
         /// <summary>
         /// เปลี่ยนค่า องศา Kelvin ให้เป็น Fahrenheit
@@ -46,8 +55,11 @@ namespace temperature {
         /// </summary>
         /// <param name="Kelvin"></param>
         /// <returns></returns>
-        public double ConvertKelvinToFahrenheit (double kelvin) {
-            throw new NotImplementedException ();
+        public double ConvertKelvinToFahrenheit (double kelvin) 
+        {
+            var f = (kelvin*1.8) - 459.67;
+            return f;
+            //throw new NotImplementedException ();
         }
         /// <summary>
         /// เปลี่ยนค่า องศา Fahrenheit ให้เป็น Kelvin
@@ -55,8 +67,11 @@ namespace temperature {
         /// </summary>
         /// <param name="fahrenheit"></param>
         /// <returns></returns>
-        public double ConvertFahrenheitToKelvin (double fahrenheit) {
-            throw new NotImplementedException ();
+        public double ConvertFahrenheitToKelvin (double fahrenheit) 
+        {
+            var k = (fahrenheit+459.67) / (1.8);
+            return k;
+           //throw new NotImplementedException ();
         }
         /// <summary>
         /// เปลี่ยนค่า องศา celsius ให้เป็น Kelvin
@@ -64,8 +79,11 @@ namespace temperature {
         /// </summary>
         /// <param name="celsius"></param>
         /// <returns></returns>
-        public double ConvertCelsiusToKelvin (double celsius) {
-            throw new NotImplementedException ();
+        public double ConvertCelsiusToKelvin (double celsius) 
+        {
+            var k = celsius + 273.15;
+            return k;
+            //throw new NotImplementedException ();
         }
 
     }
